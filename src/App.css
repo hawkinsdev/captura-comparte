@@ -1,3 +1,7 @@
+* {
+  font-family: sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,19 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.divider {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divider::before, .divider::after {
+  flex: 1;
+  content: '';
+  padding: 1px;
+  background-color: rgb(145, 145, 145);
+  margin: 5px;
 }
